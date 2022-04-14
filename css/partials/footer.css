@@ -1,0 +1,25 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 68 | / @include header-adaption {
+ * 69 | |     .footer{
+ * 70 | |         padding: 30px 0 50px 0;
+ * 71 | |     }
+ * 72 | |     .footer-link{
+ * 73 | |         p{
+ * 74 | |             font-size: 20px;
+ * 75 | |         }
+ * 76 | |     }
+ * 77 | \ }
+ *    '
+ *   scss\partials\footer.scss 68:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 68 \2502  \250c  @include header-adaption {\a 69 \2502  \2502      .footer{\a 70 \2502  \2502          padding: 30px 0 50px 0;\a 71 \2502  \2502      }\a 72 \2502  \2502      .footer-link{\a 73 \2502  \2502          p{\a 74 \2502  \2502              font-size: 20px;\a 75 \2502  \2502          }\a 76 \2502  \2502      }\a 77 \2502  \2514  }\a    \2575 \a   scss\\partials\\footer.scss 68:1  root stylesheet";
+}

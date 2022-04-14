@@ -1,0 +1,264 @@
+
+.header-title{
+    background: url(../img/header/dots-without\ bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.top-auto{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 50;
+    
+    a{
+        color: rgba(0, 0, 0, 0.765);
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.494);
+        max-width: 100%;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    a:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
+}
+
+@include adaption{
+   
+    .top-auto{
+        a{
+            padding: 20px;
+
+        }
+    }
+}
+
+@include road-map-min-adap {
+    .top-auto{
+        a{
+            padding: 10px;
+            font-size: 10px;
+        }
+    }
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #101932;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.header-inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+}
+
+.header-logo{
+    img{
+        max-width: 100%;
+        display: block;
+    }
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.header-burger{
+    display: none;
+}
+
+.header-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.header-list-li{
+    transition: 1s;
+}
+
+.header-link{
+    font-size: 14px;
+    color: #fff;
+    margin: 0 10px;
+    opacity: 0.8;
+    padding: 10px 0 10px 0;
+}
+
+.header-link:hover{
+    border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+.join {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-color: $red;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+
+  .join:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+  }
+
+  .join:hover:before {
+    animation: move-light 1.5s infinite;
+  }
+  
+  @keyframes move-light {
+    from {
+      transform: translateX(-4em) skewX(-45deg);
+    }
+    to {
+      transform: translateX(10em) skewX(-45deg);
+    }
+  }
+
+
+@include header-adaption {
+    body.lock{
+        overflow: hidden;
+    }
+
+    .header::before{
+        background-color: #384D70;
+    }
+
+    .header-inner{
+        height: 50px;
+        padding: 0;
+    }
+
+    .header-logo{
+        flex:0 0 150px;
+    }
+
+    .header-burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .header-burger span{
+        position: absolute;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header-burger::before,
+    .header-burger::after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .header-burger::before{
+        top: 0;
+    }
+
+    .header-burger::after{
+        bottom: 0;
+    }
+
+    .header-burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header-burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header-burger.active span{
+        transform: scale(0);
+    }
+
+    .header-menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #384D70;
+        padding: 100px 0 0 0;
+    }
+
+    .header-menu.active{
+        top: 0;
+    }
+
+    .header-list{
+        display: block;
+    }
+
+    .header-list li{
+        margin: 0 0 30px 0;
+    }
+
+    .header-link:hover{
+        border-bottom: none;
+    }
+
+    .header-link{
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .join{
+        padding: 13px 59px;
+        margin-left: 0;
+        margin-left: 1%;
+        
+    }
+
+}
+

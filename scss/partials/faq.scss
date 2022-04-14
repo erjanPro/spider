@@ -1,0 +1,120 @@
+
+
+.faq{
+    padding: 70px 0 150px 0;
+    h5{
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.faq-item{
+    margin-bottom: 20px;
+    background-color: $goluboi;
+    border-radius: 15px;
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.faq-title{
+    display: block;
+    padding: 20px 15px ;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    line-height: 23px;
+    cursor: pointer;
+    transition: background .3s ease-out;
+    border-radius: 15px;
+}
+
+.faq-title::after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.faq-title:hover{
+    background-color: $grey;
+    border-radius: 15px;
+}
+
+.faq-input{
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: absolute;
+}
+
+.faq-input:checked ~ .faq-text{
+    display: block;
+
+}
+
+.faq-input:checked ~ .faq-title::after{
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #ffffff transparent;
+    
+}
+
+.faq-text{
+    display: none;
+    padding: 10px 15px ;
+    font-size: 17px;
+    line-height: 25px;
+    p{
+        color: #fff;
+    }
+}
+
+
+@include adaption {
+    .faq{
+        padding: 30px 0;
+        h5{
+            font-size: 40px;
+        }
+    }
+
+    .faq-item{
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .faq-title{
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 30px 10px 10px;
+    }
+
+    .faq-text{
+        font-size: 13px;
+        line-height: 17px;
+        padding: 5px;
+        p{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@include road-map-min-adap {
+    .faq{
+        padding: 0;
+        h5{
+            font-size: 30px;
+            line-height: 40px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+}

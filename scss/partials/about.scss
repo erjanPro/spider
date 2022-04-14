@@ -1,0 +1,91 @@
+
+.about{
+    background-color: $fielet;
+    margin-top: 100px;
+}
+
+.about-main{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.about-main-learn{
+    max-width: 35%;
+    h5{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px; 
+        color: #fff;
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 65px;
+    }
+    a{
+        font-weight: 700;
+        font-size: 25px;
+        background-color: $red;
+        color: #fff;
+        padding: 25px 30px;
+        border-radius: 10px;
+    }
+}
+
+.about-main-card{
+    max-width: 55%;
+}
+
+.about-card-trend{
+    display: flex;
+    align-items: center;
+}
+
+.about-card-trend:before{
+    content: '';
+    display: inline-block;
+    background: url(../../img/about/Union.png) no-repeat;
+    width: 260px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.about-card-memecoin{
+    display: flex;
+    align-items: center;
+}
+
+.about-card-memecoin::before{
+    content: '';
+    display: inline-block;
+    background: url(../../img/about/Vector\ \(2\).png) no-repeat;
+    width: 360px;
+    height: 80px;
+}
+
+.about-content{
+    h6{
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+    }
+    p{
+        font-size: 25px;
+        line-height: 30px;
+        opacity: 0.8;
+        font-weight: 400;
+    }
+}
+
+.about-content-1{
+    margin-bottom: 50px;
+}
+
+@include play-adap{
+    .about{
+        display: none;
+    }
+}
+

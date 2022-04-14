@@ -1,0 +1,222 @@
+
+.web-card{
+    margin-top: 100px;
+    h2{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+}
+
+.card-web{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-1{
+    width: 30%;
+    background-color: $goluboi;
+    border-radius: 20px;
+    padding: 10px 40px;
+    h5{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 42px;
+        color: #fff;
+        margin: 10px 0;
+    }
+    p{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.card-2{
+    width: 30%;
+    background-color: $goluboi;
+    border-radius: 20px;
+    padding: 10px 40px;
+    h5{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 42px;
+        color: #fff;
+        margin: 10px 0;
+    }
+    p{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.card-3{
+    width: 30%;
+    background-color: $goluboi;
+    border-radius: 20px;
+    padding: 10px 40px;
+    h5{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 42px;
+        color: #fff;
+        margin: 10px 0;
+    }
+    p{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.card-1::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/web-card/Group\ 37.png) no-repeat;
+    width: 120px;
+    height: 120px;
+}
+
+.card-2::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/web-card/Group\ 36.png) no-repeat;
+    width: 120px;
+    height: 120px;
+}
+
+.card-3::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/web-card/Group\ 38.png) no-repeat;
+    width: 120px;
+    height: 120px;
+}
+
+.card-text-1{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.card-text-2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 0.3;
+}
+
+.card-text-3{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 0.3;
+}
+
+@include adaption{
+    .web-card{
+        margin-top: 30px;
+        h2{
+            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+    .card-web{
+        flex-direction: column;
+    }
+
+    .card-1{
+        width: 100%;
+        margin:0 0 15px 0;
+        padding: 10px;
+        h5{
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0 0 10px 0;
+        }
+        P{
+            font-size: 12px;
+            line-height: 14px;
+            margin: 10px 0;
+        }
+    }
+
+    .card-1::before{
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-size: 200px;
+    }
+
+    .card-2{
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        h5{
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0 0 10px 0;
+        }
+        P{
+            font-size: 12px;
+            line-height: 14px;
+            margin: 10px 0;
+        }
+    }
+
+    .card-2::before{
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-size: 200px;
+    }
+
+    .card-2:hover{
+        transform: translateY(0%);
+    }
+
+    .card-3{
+        width: 100%;
+        padding: 10px;
+        h5{
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0 0 10px 0;
+        }
+        P{
+            font-size: 12px;
+            line-height: 14px;
+            margin: 10px 0;
+        }
+    }
+
+    .card-3:hover{
+        transform: translateY(0%);
+    }
+
+    .card-3::before{
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-size: 200px;
+    }
+}

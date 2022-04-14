@@ -1,0 +1,141 @@
+
+
+.footer{
+    background-color: #162758;
+}
+
+.footer-main{
+    padding: 60px 0 100px 0;
+    h5{
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.footer-center{
+    text-align: center;
+}
+
+.footer-icon{
+    img{
+        margin: 20px 20px;
+    }
+}
+
+.footer-img{
+    margin: 80px 0 50px 0;
+}
+
+.footer-link{
+    text-align: left;
+    margin-left: 25%;
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 50%;
+    padding: 23px 56px;
+    border-radius: 50px;
+    .footer-text{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    p{
+        margin: 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        font-size: 25px;
+    }
+    br{
+        display: none;
+    }
+}
+
+.footer-end{
+    background-color: #0D1428;
+    text-align: center;
+    padding: 40px 0;
+    p{
+        margin: 0;
+        opacity: 0.4;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+
+
+@include header-adaption {
+    .footer{
+        padding: 30px 0 50px 0;
+    }
+    .footer-link{
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@include road-adap {
+    .footer-main{
+        h5{
+            font-size: 40px;
+        }
+    }
+
+    .footer-link{
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@include title-text-adaption {
+    .footer-link{
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+@include adaption {
+    .footer-link{
+        padding: 20px;
+        br{
+            display: block;
+        }
+    }
+}
+
+@include road-map-min-adap {
+    .footer-main{
+        padding: 0;
+        h5{
+            font-size: 30px;
+            line-height: 40px;
+            margin: 0;
+        }
+    }
+
+    .footer-icon{
+        img{
+            margin: 10px 10px;
+            width: 15%;
+        }
+    }
+
+    .footer-img{
+        margin: 30px 0;
+    }
+
+    .footer-link{
+        display: none;
+    }
+
+    .footer-end{
+        padding: 15px 0;
+        p{
+            font-size: 12px;
+        }
+    }
+}

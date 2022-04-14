@@ -1,0 +1,343 @@
+
+.play-title{
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.play-text{
+    font-weight: 400;
+    font-size: 25px;
+    opacity: 0.5;
+    text-align: center;
+    color: #fff;
+    margin: 40px 0 80px;
+}
+
+.play-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #071022;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.play-card-1{
+    width: 38%;
+    position: relative;
+    img{
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+
+.play-card-1::before{
+    content: '';
+    position: absolute;
+    background: url(../img/play/g10\ \(1\).png) no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 186px;
+}
+
+.play-card-1::after{
+    content: '';
+    position: absolute;
+    background: url(../img/play/image\ 36.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+    left: 50%;
+}
+
+.play-card-2{
+    width: 60%;
+    h5{
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+
+.play-main-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card-play-1{
+    display: flex;
+    align-items: center;
+    background-color: #FF9429;
+    width: 49%;
+    padding: 10px;
+    border-radius: 30px;
+    h6{
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        opacity: 0.8;
+        color: #fff;
+    }
+}
+
+.card-play-1::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/play/Coin\ 1.png) no-repeat;
+    background-size: 130px;
+    width: 450px;
+    height: 160px;
+    margin: 30px;
+}
+
+.card-play-2{
+    display: flex;
+    align-items: center;
+    background-color: #067CCB;
+    width: 49%;
+    padding: 10px;
+    border-radius: 30px;
+    h6{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        opacity: 0.8;
+        color: #fff;
+    }
+}
+
+.card-play-2::before{
+    content: '';
+    display: inline-block;
+    background: url(../img/play/Megaphone\ 1\ 1.png) no-repeat;
+    background-size: 150px;
+    width: 550px;
+    height: 160px;
+    margin: 30px;
+}
+
+
+
+
+@include play-adap{
+    .play-main{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .play-title{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    .play-text{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .play-card-1{
+        width: 100%;
+    }
+
+    .play-card-1::before{
+        content: '';
+        position: absolute;
+        background-size: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .play-card-2{
+        width: 100%;
+        h5{
+            font-size: 25px;
+            line-height: 28px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+
+    .play-card-1::after{
+        content: '';
+        position: absolute;
+        background-size: 100px;
+    }
+
+    .play-main-2{
+        width: 100%;
+    }
+
+    .card-play-1{
+        width: 48%;
+        display: inline-block;
+        margin-bottom: 20px;
+        text-align: center;
+            h6{
+                font-size: 25px;
+                line-height: 28px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 23px;
+            }
+    }
+
+    .card-play-1::before{
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 105px;
+        background-size: 100px;
+        margin: 0;
+    }
+
+    .card-play-2::before{
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 105px;
+        background-size: 100px;
+        margin: 0;
+    }
+
+    .card-play-2{
+        width: 48%;
+        display: inline-block;
+        text-align: center;
+        h6{
+            font-size: 25px;
+            line-height: 28px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+    
+    .card-play-2::before{
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 105px;
+        background-size: 100px;
+        margin: 0;
+    }
+}
+
+
+@include play-adap-200 {
+
+    .play-title{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .play-text{
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .play-main-2{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .card-play-1{
+        width: 100%;
+        margin-bottom: 10px;
+        h6{
+            font-size: 20px;
+            line-height: 20px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .card-play-2{
+        width: 100%;
+        margin-bottom: 10px;
+        h6{
+            font-size: 20px;
+            line-height: 20px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .card-play-2{
+        width: 100%;
+    }
+
+    .card-play-1::before{
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 70px;
+        background-size: 60px;
+        margin: 0;
+    }
+
+    .card-play-2::before{
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 70px;
+        background-size: 60px;
+        margin: 0;
+    }
+
+    .play-card-2{
+        h5{
+            font-size: 20px;
+        }
+        p{
+           font-size: 12px;
+           line-height: 16px; 
+        }
+    }
+
+    .play-card-1::before{
+        background-size: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .play-card-1::after{
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+    }
+}

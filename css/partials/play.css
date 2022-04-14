@@ -1,0 +1,121 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 150 | / @include play-adap{
+ * 151 | |     .play-main{
+ * 152 | |         flex-direction: column;
+ * 153 | |         padding: 10px;
+ * 154 | |     }
+ * 155 | | 
+ * 156 | |     .play-title{
+ * 157 | |         font-size: 40px;
+ * 158 | |         margin-top: 30px;
+ * 159 | |     }
+ * 160 | | 
+ * 161 | |     .play-text{
+ * 162 | |         font-size: 20px;
+ * 163 | |         margin: 20px 0;
+ * 164 | |     }
+ * 165 | | 
+ * 166 | |     .play-card-1{
+ * 167 | |         width: 100%;
+ * 168 | |     }
+ * 169 | | 
+ * 170 | |     .play-card-1::before{
+ * 171 | |         content: '';
+ * 172 | |         position: absolute;
+ * 173 | |         background-size: 100px;
+ * 174 | |         width: 100px;
+ * 175 | |         height: 100px;
+ * 176 | |     }
+ * 177 | | 
+ * 178 | |     .play-card-2{
+ * 179 | |         width: 100%;
+ * 180 | |         h5{
+ * 181 | |             font-size: 25px;
+ * 182 | |             line-height: 28px;
+ * 183 | |         }
+ * 184 | |         p{
+ * 185 | |             font-size: 15px;
+ * 186 | |             line-height: 23px;
+ * 187 | |         }
+ * 188 | |     }
+ * 189 | | 
+ * 190 | |     .play-card-1::after{
+ * 191 | |         content: '';
+ * 192 | |         position: absolute;
+ * 193 | |         background-size: 100px;
+ * 194 | |     }
+ * 195 | | 
+ * 196 | |     .play-main-2{
+ * 197 | |         width: 100%;
+ * 198 | |     }
+ * 199 | | 
+ * 200 | |     .card-play-1{
+ * 201 | |         width: 48%;
+ * 202 | |         display: inline-block;
+ * 203 | |         margin-bottom: 20px;
+ * 204 | |         text-align: center;
+ * 205 | |             h6{
+ * 206 | |                 font-size: 25px;
+ * 207 | |                 line-height: 28px;
+ * 208 | |             }
+ * 209 | |             p{
+ * 210 | |                 font-size: 15px;
+ * 211 | |                 line-height: 23px;
+ * 212 | |             }
+ * 213 | |     }
+ * 214 | | 
+ * 215 | |     .card-play-1::before{
+ * 216 | |         content: '';
+ * 217 | |         display: inline-block;
+ * 218 | |         width: 100px;
+ * 219 | |         height: 105px;
+ * 220 | |         background-size: 100px;
+ * 221 | |         margin: 0;
+ * 222 | |     }
+ * 223 | | 
+ * 224 | |     .card-play-2::before{
+ * 225 | |         content: '';
+ * 226 | |         display: inline-block;
+ * 227 | |         width: 100px;
+ * 228 | |         height: 105px;
+ * 229 | |         background-size: 100px;
+ * 230 | |         margin: 0;
+ * 231 | |     }
+ * 232 | | 
+ * 233 | |     .card-play-2{
+ * 234 | |         width: 48%;
+ * 235 | |         display: inline-block;
+ * 236 | |         text-align: center;
+ * 237 | |         h6{
+ * 238 | |             font-size: 25px;
+ * 239 | |             line-height: 28px;
+ * 240 | |         }
+ * 241 | |         p{
+ * 242 | |             font-size: 15px;
+ * 243 | |             line-height: 23px;
+ * 244 | |         }
+ * 245 | |     }
+ * 246 | |     
+ * 247 | |     .card-play-2::before{
+ * 248 | |         content: '';
+ * 249 | |         display: inline-block;
+ * 250 | |         width: 100px;
+ * 251 | |         height: 105px;
+ * 252 | |         background-size: 100px;
+ * 253 | |         margin: 0;
+ * 254 | |     }
+ * 255 | \ }
+ *     '
+ *   scss\partials\play.scss 150:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 150 \2502  \250c  @include play-adap{\a 151 \2502  \2502      .play-main{\a 152 \2502  \2502          flex-direction: column;\a 153 \2502  \2502          padding: 10px;\a 154 \2502  \2502      }\a 155 \2502  \2502  \a 156 \2502  \2502      .play-title{\a 157 \2502  \2502          font-size: 40px;\a 158 \2502  \2502          margin-top: 30px;\a 159 \2502  \2502      }\a 160 \2502  \2502  \a 161 \2502  \2502      .play-text{\a 162 \2502  \2502          font-size: 20px;\a 163 \2502  \2502          margin: 20px 0;\a 164 \2502  \2502      }\a 165 \2502  \2502  \a 166 \2502  \2502      .play-card-1{\a 167 \2502  \2502          width: 100%;\a 168 \2502  \2502      }\a 169 \2502  \2502  \a 170 \2502  \2502      .play-card-1::before{\a 171 \2502  \2502          content: '';\a 172 \2502  \2502          position: absolute;\a 173 \2502  \2502          background-size: 100px;\a 174 \2502  \2502          width: 100px;\a 175 \2502  \2502          height: 100px;\a 176 \2502  \2502      }\a 177 \2502  \2502  \a 178 \2502  \2502      .play-card-2{\a 179 \2502  \2502          width: 100%;\a 180 \2502  \2502          h5{\a 181 \2502  \2502              font-size: 25px;\a 182 \2502  \2502              line-height: 28px;\a 183 \2502  \2502          }\a 184 \2502  \2502          p{\a 185 \2502  \2502              font-size: 15px;\a 186 \2502  \2502              line-height: 23px;\a 187 \2502  \2502          }\a 188 \2502  \2502      }\a 189 \2502  \2502  \a 190 \2502  \2502      .play-card-1::after{\a 191 \2502  \2502          content: '';\a 192 \2502  \2502          position: absolute;\a 193 \2502  \2502          background-size: 100px;\a 194 \2502  \2502      }\a 195 \2502  \2502  \a 196 \2502  \2502      .play-main-2{\a 197 \2502  \2502          width: 100%;\a 198 \2502  \2502      }\a 199 \2502  \2502  \a 200 \2502  \2502      .card-play-1{\a 201 \2502  \2502          width: 48%;\a 202 \2502  \2502          display: inline-block;\a 203 \2502  \2502          margin-bottom: 20px;\a 204 \2502  \2502          text-align: center;\a 205 \2502  \2502              h6{\a 206 \2502  \2502                  font-size: 25px;\a 207 \2502  \2502                  line-height: 28px;\a 208 \2502  \2502              }\a 209 \2502  \2502              p{\a 210 \2502  \2502                  font-size: 15px;\a 211 \2502  \2502                  line-height: 23px;\a 212 \2502  \2502              }\a 213 \2502  \2502      }\a 214 \2502  \2502  \a 215 \2502  \2502      .card-play-1::before{\a 216 \2502  \2502          content: '';\a 217 \2502  \2502          display: inline-block;\a 218 \2502  \2502          width: 100px;\a 219 \2502  \2502          height: 105px;\a 220 \2502  \2502          background-size: 100px;\a 221 \2502  \2502          margin: 0;\a 222 \2502  \2502      }\a 223 \2502  \2502  \a 224 \2502  \2502      .card-play-2::before{\a 225 \2502  \2502          content: '';\a 226 \2502  \2502          display: inline-block;\a 227 \2502  \2502          width: 100px;\a 228 \2502  \2502          height: 105px;\a 229 \2502  \2502          background-size: 100px;\a 230 \2502  \2502          margin: 0;\a 231 \2502  \2502      }\a 232 \2502  \2502  \a 233 \2502  \2502      .card-play-2{\a 234 \2502  \2502          width: 48%;\a 235 \2502  \2502          display: inline-block;\a 236 \2502  \2502          text-align: center;\a 237 \2502  \2502          h6{\a 238 \2502  \2502              font-size: 25px;\a 239 \2502  \2502              line-height: 28px;\a 240 \2502  \2502          }\a 241 \2502  \2502          p{\a 242 \2502  \2502              font-size: 15px;\a 243 \2502  \2502              line-height: 23px;\a 244 \2502  \2502          }\a 245 \2502  \2502      }\a 246 \2502  \2502      \a 247 \2502  \2502      .card-play-2::before{\a 248 \2502  \2502          content: '';\a 249 \2502  \2502          display: inline-block;\a 250 \2502  \2502          width: 100px;\a 251 \2502  \2502          height: 105px;\a 252 \2502  \2502          background-size: 100px;\a 253 \2502  \2502          margin: 0;\a 254 \2502  \2502      }\a 255 \2502  \2514  }\a     \2575 \a   scss\\partials\\play.scss 150:1  root stylesheet";
+}

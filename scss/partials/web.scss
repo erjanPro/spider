@@ -1,0 +1,238 @@
+
+.web{
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.web-img{
+    display: flex;
+    justify-content: center;
+    img{
+        opacity: 0.3;
+        margin-left: 20px;
+        transition: 0.5s;
+        width: 80%;
+    }
+    img:hover{
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+
+.web-img-1{
+    display: flex;
+}
+
+.web-img-2{
+    display: flex;
+}
+
+.web-earth-img{
+    img{
+        max-width: 100%;
+        margin: 85px 0;
+    }
+    position: relative;
+}
+
+.web-earth{
+    position: relative;
+}
+
+
+.earth{
+    background-image: url('https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcTQqoB4xBnIkmUg5pxDyYW2h0Q1pRTsbQBOfhg-E-y4iLFicsyi');
+     width: 70px;
+     height: 70px;
+     /* a black shadow from left and white from right */
+     box-shadow: inset 16px 0 40px 3px rgba(0,0,0,0.9),
+       inset -3px 0 5px 2px rgba(255,255,255,0.16);
+     background-size: 190px;
+     margin: 0 auto;
+     border-radius: 50%;
+     position: relative;
+     animation-name: move,scale,rotate;
+     animation-duration: 4s,4s,4s;
+     animation-iteration-count: infinite,infinite,infinite;
+     animation-timing-function: ease-in-out,linear,linear;
+     margin-top: 50px;
+}
+   
+@keyframes move {
+     0%   { left: 200px;  }  
+     70%  { left: -200px; }
+     100% { left: 200px;  }
+}
+   
+@keyframes scale {
+     0%  { transform: scale(1);   }
+     32% { transform: scale(0.4); animation-timing-function:  ease-in; }
+     70% { transform: scale(1); animation-timing-function:  ease-in;  }
+     75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
+     86% { transform: scale(2);  }  
+     98% { transform: scale(1.2); }
+     100%{ transform: scale(1); }
+}
+    
+@keyframes rotate {
+     0% { background-position: 0px; }
+     100% { background-position: 190px; }
+}
+
+
+
+.web-earth p{
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.out-more-a{
+    font-size: 22px;
+    color: #fff;
+    background-color: $red;
+    padding: 10px 45px;
+    border-radius: 10px;
+}
+
+.web-earth li{
+    margin-top: 20px;
+}
+
+.krug-button{
+    img{
+        margin: 30px 0;
+    }
+    .krug-button-a-1{
+        width: 108px;
+        height: 108px;
+        left: 25%;
+        top: 50%;
+        position: absolute;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    .krug-button-a-1:hover{
+        background-color: #e11d2d42;
+        transition: all 0.5s;
+        border-radius: 50%;
+    }
+
+    .krug-button-a-2{
+        width: 108px;
+        height: 108px;
+        right: 30%;
+        bottom: -15px;
+        position: absolute;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    .krug-button-a-2:hover{
+        background-color: #FF942942;
+        transition: all 0.5s;
+        border-radius: 50%;
+    }
+
+    .krug-button-a-3{
+        width: 108px;
+        height: 108px;
+        top: 0;
+        right: 20%;
+        position: absolute;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    .krug-button-a-3:hover{
+        background-color: #0095f242;
+        transition: all 0.5s;
+        border-radius: 50%;
+    }
+}
+
+@include adaption{
+    .web-earth p{
+        margin: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .web-img{
+        display: inline-block;
+        img{
+            max-width: 80%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .earth{
+        display: none;
+    }
+
+    .krug-button{
+        img{
+              margin: 15px 0;
+              width: 40px; 
+        }
+        .krug-button-a-1{
+            width: 70px;
+            height: 70px;
+            left: 0;
+            top: 20%;
+            position: absolute;
+            
+        }
+    
+        .krug-button-a-2{
+            width: 70px;
+            height: 70px;
+            right: 10%;
+            bottom: 5%;
+            position: absolute;
+        }
+    
+        .krug-button-a-3{
+            width: 70px;
+            height: 70px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            
+        }
+    }
+}
+
+@include play-adap-200 {
+    .web-img{
+        img{
+            max-width: 80%;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .web-earth{
+        p{
+            font-size: 20px;
+            line-height: 25px;
+            margin: 30px 0 0 0;
+        }
+    }
+
+    .web-earth-img{
+        img{
+            margin: 15px 0 25px 0;
+        }
+    }
+
+    .out-more-a{
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+
+}

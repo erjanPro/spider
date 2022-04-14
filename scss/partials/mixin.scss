@@ -1,0 +1,72 @@
+
+@mixin adaption {
+    @media screen and (max-width: 767px) {
+        @content
+    }
+};
+
+@mixin header-adaption {
+    @media screen and (max-width: 1470px) {
+        @content
+    }
+};
+
+@mixin title-text-adaption {
+    @media screen and(max-width: 916px){
+        @content
+    }
+};
+
+@mixin play-adap {
+    @media screen and(max-width:1320px){
+        @content
+    }
+};
+
+@mixin road-adap {
+    @media screen and(max-width:1200px){
+        @content
+    }
+};
+
+@mixin play-adap-200 {
+    @media screen and(max-width: 480px){
+        @content
+    }
+};
+
+@mixin road-map-min-adap {
+    @media screen and(max-width: 550px){
+        @content
+    }
+};
+
+@mixin road-style {
+    width: 47%;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 60px;
+};
+
+@mixin road-style-img {
+    background-color: $goluboi;
+    opacity: 0.5;
+    padding: 50px 56px;
+    border-radius: 30px;
+    height: 100%;
+};
+
+@mixin road-style-text {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    margin:0 0 20px 20px;
+};
+
+@mixin road-style-list {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    list-style: inherit;
+    margin-left: 50px;
+};
